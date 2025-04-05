@@ -1,11 +1,10 @@
-mod shop;
 mod helpers;
-pub use shop::book;
-pub use shop::author;
-pub use helpers::print_helper::print_book;
-use crate::book::Book;
+mod shop;
 use crate::author::Author;
-
+use crate::book::Book;
+pub use helpers::print_helper::print_book;
+pub use shop::author;
+pub use shop::book;
 
 fn main() {
     let _book1 = Book {
@@ -13,7 +12,7 @@ fn main() {
         author: Author {
             first_name: "Stephen".to_string(),
             last_name: "King".to_string(),
-        }
+        },
     };
 
     println!("{}", print_book(Some(_book1)).to_string());
