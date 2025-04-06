@@ -1,10 +1,5 @@
-mod helpers;
-mod shop;
-use crate::author::Author;
-use crate::book::Book;
-pub use helpers::print_helper::print_book;
-pub use shop::author;
-pub use shop::book;
+use rust_sandbox::shop::{book::*, author::*};
+use rust_sandbox::helpers::print_helper::*;
 
 fn main() {
     let _book1 = Book {
