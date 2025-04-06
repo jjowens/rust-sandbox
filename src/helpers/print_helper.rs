@@ -1,4 +1,4 @@
-use crate::book::Book;
+use crate::shop::book::Book;
 
 pub fn print_book(_book: Option<Book>) -> String {
     match _book {

@@ -1,8 +1,5 @@
-mod helpers;
-use crate::shop;
-use crate::author::Author;
-use crate::book::Book;
-pub use helpers::print_helper::print_book;
+use rust_sandbox::shop::{book::*, author::*};
+use rust_sandbox::helpers::print_helper::*;
 
 #[cfg(test)]
 mod helper_test {
@@ -20,6 +17,15 @@ mod helper_test {
 
         let actual_result =  print_book(Some(_book1)).to_string();
         let expected_result = "Salem's Lot - Stephen King".to_string();
+
+        assert_eq!(actual_result, expected_result);
+    }
+
+    #[test]
+    fn test_print_nothing_if_no_book() {
+
+        let actual_result =  print_book(None).to_string();
+        let expected_result = "".to_string();
 
         assert_eq!(actual_result, expected_result);
     }
