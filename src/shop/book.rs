@@ -1,4 +1,4 @@
-use crate::author::Author;
+use crate::shop::author::Author;
 
 pub struct Book {
     pub title: String,
