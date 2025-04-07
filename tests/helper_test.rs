@@ -23,8 +23,28 @@ mod helper_test {
 
     #[test]
     fn test_print_nothing_if_no_book() {
-
         let actual_result =  print_book(None).to_string();
+        let expected_result = "".to_string();
+
+        assert_eq!(actual_result, expected_result);
+    }
+
+    #[test]
+    fn test_print_author() {
+        let _author = Author {
+            first_name: "Ray".to_string(),
+            last_name: "Bradbury".to_string(),
+        };
+
+        let actual_result =  print_author(Some(_author)).to_string();
+        let expected_result = "Ray Bradbury".to_string();
+
+        assert_eq!(actual_result, expected_result);
+    }
+
+    #[test]
+    fn test_print_nothing_if_no_author() {
+        let actual_result =  print_author(None).to_string();
         let expected_result = "".to_string();
 
         assert_eq!(actual_result, expected_result);
