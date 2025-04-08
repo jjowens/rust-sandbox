@@ -1,7 +1,7 @@
 use crate::shop::book::Book;
 use crate::shop::author::Author;
 
-pub fn print_book(_book: Option<Book>) -> String {
+pub fn print_book(_book: Option<&Book>) -> String {
     match _book {
         Some(item) => format!(
             "{} - {} {}",
@@ -13,7 +13,7 @@ pub fn print_book(_book: Option<Book>) -> String {
     }
 }
 
-pub fn print_author(_author: Option<Author>) -> String {
+pub fn print_author(_author: Option<&Author>) -> String {
     match _author {
         Some(item) => format!(
             "{} {}",

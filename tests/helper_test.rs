@@ -15,7 +15,7 @@ mod helper_test {
             },
         };
 
-        let actual_result =  print_book(Some(_book1)).to_string();
+        let actual_result =  print_book(Some(&_book1)).to_string();
         let expected_result = "Salem's Lot - Stephen King".to_string();
 
         assert_eq!(actual_result, expected_result);
@@ -36,7 +36,7 @@ mod helper_test {
             last_name: "Bradbury".to_string(),
         };
 
-        let actual_result =  print_author(Some(_author)).to_string();
+        let actual_result =  print_author(Some(&_author)).to_string();
         let expected_result = "Ray Bradbury".to_string();
 
         assert_eq!(actual_result, expected_result);

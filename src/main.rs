@@ -12,7 +12,7 @@ fn main() {
         author: _author,
     };
 
-    println!("{}", print_book(Some(_book1.clone())).to_string());
-    println!("{}", _book1.clone().to_string());
+    println!("{}", print_book(Some(&_book1)).to_string());
+    println!("{}", _book1.to_string());
 
 }
