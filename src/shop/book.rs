@@ -9,10 +9,9 @@ pub struct Book {
 impl Book {
     pub fn to_string(&self) -> String {
         format!(
-            "{} - {} {}",
+            "{} - {}",
             self.title.to_string(),
-            self.author.first_name.to_string(),
-            self.author.last_name.to_string()
+            self.author.to_string(),
         )
     }
 }
