@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod author_test {
-    use rust_sandbox::shop::author::Author;
+    use rust_sandbox::services::author::Author;
 
     #[test]
     fn should_print_author() {

@@ -1,4 +1,4 @@
-use rust_sandbox::shop::{book::*, author::*};
+use rust_sandbox::services::{book::*, author::*};
 use rust_sandbox::helpers::print_helper::*;
 
 fn main() {
