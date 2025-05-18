@@ -1,4 +1,4 @@
-use crate::shop::author::Author;
+use crate::services::author::Author;
 
 #[derive(Clone)]
 pub struct Book {

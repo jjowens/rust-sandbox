@@ -1,5 +1,5 @@
-use crate::shop::book::Book;
-use crate::shop::author::Author;
+use crate::services::book::Book;
+use crate::services::author::Author;
 
 pub fn print_book(_book: Option<&Book>) -> String {
     match _book {

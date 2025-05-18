@@ -1,2 +1,2 @@
-pub mod shop;
+pub mod services;
 pub mod helpers;

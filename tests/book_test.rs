@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod author_test {
-    use rust_sandbox::shop::author::Author;
-    use rust_sandbox::shop::book::Book;
+    use rust_sandbox::services::author::Author;
+    use rust_sandbox::services::book::Book;
 
     #[test]
     fn should_print_book() {
