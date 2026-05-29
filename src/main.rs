@@ -1,18 +1,11 @@
-use rust_sandbox::services::{book::*, author::*};
-use rust_sandbox::helpers::print_helper::*;
+use rust_sandbox::services::data_service::get_books;
 
 fn main() {
-    let _author = Author {
-        first_name: "Stephen".to_string(),
-        last_name: "King".to_string(),
-    };
 
-    let _book1 = Book {
-        title: "Salem's Lot".to_string(),
-        author: _author,
-    };
+    let books = get_books();
 
-    println!("{}", print_book(Some(&_book1)).to_string());
-    println!("{}", _book1.to_string());
+    for book in books {
+        println!("{}", book.to_string())
+    }
 
 }
